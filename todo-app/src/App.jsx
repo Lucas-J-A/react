@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Task } from './components/Task'
 
 const tasks = [
@@ -8,7 +9,9 @@ const tasks = [
   }
 ]
 
-export function App() {
+export function App() { 
+
+  const [task, setTask ] = useState(data)
   return (
     <main>
       <h1>Todo App</h1>
